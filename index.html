@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Marcelle Nunes</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+
+        :root{
+            --cor1: #f5cdc0;
+            --cor2: #34375a;
+            --cor3: #906f8d;
+            --cor4: #744c71;
+            --cor5: #a45c54;
+        }
+
+        body {
+            background-color: var(--cor3);
+            font-family: "Poppins", sans-serif;
+        }
+
+        #logo {
+            font-size: 27px;
+        }
+
+        #cabecalho{
+            width: 100%; 
+            padding: 2% 3%;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        h1 {
+            color: var(--cor1);
+        }
+
+        #itens a {
+            color: var(--cor1);
+            text-decoration: none;
+            margin: 10px; 
+        }
+
+        #itens a:hover {
+            color: var(--cor2);
+            transition: 1s;
+        }
+
+        #menu{
+            max-width: 600px;
+            padding: 15px;
+            position: absolute;
+            top: 25%;
+            left: 3%;
+        }
+
+        .menu-container {
+            color: var(--cor1);
+            
+        }
+
+        .menu-container h1{
+            font-size: 46px;
+        }
+
+        .menu-container h3 {
+            color: var(--cor4);
+            margin-top: 10px;
+            font-size: 28px;
+        }
+
+        .menu-container p {
+            text-align: justify;
+            line-height: 1.8;
+            margin-top: 15px;
+        }
+
+        .menu-container button{
+            background-color: var(--cor1);
+            border: 0;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .menu-container button > a{
+            color: var(--cor4);
+            text-decoration: none;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .menu-container button:hover{
+            background-color: var(--cor4);
+            transition: 1s;
+           
+        }
+
+        .menu-container button > a:hover{
+            color: var(--cor1);
+        }
+
+        .design {
+            position: absolute;
+            top: 35%;
+            left: 65%;
+            
+          
+        }
+        .design img{
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .especialidades{
+            width: 100%;
+            position: absolute;
+            top: 100%;
+        }
+
+        .especialidades h1 {
+            position: absolute;
+            left: 40%;
+            font-size: 30px;
+        }
+
+        .especialidades i {
+            color: white;
+            font-size: 100px;
+            margin-top: 80px;
+            margin-left: 130px;
+            color: var(--cor1);
+        }
+
+        .portfolio{
+            width: 100%;
+            position: absolute;
+            top: 140%;
+            display: flex;
+        }
+       
+        .portfolio h1 {
+            position: absolute;
+            left: 44%;
+            font-size: 30px;
+        }
+
+        .card{
+            display: inline-block;
+            width: 30%;
+            height: 300px;
+            background-color: var(--cor4);
+            border-radius: 20px;
+            margin-top: 60px;
+            margin-left: 30px;
+        }
+
+        .card i {
+            font-size: 50px;
+            margin-top: 30%;
+            margin-left: 43%;
+            color: var(--cor1);
+        }
+
+        .portfolio > .card:nth-child(2){
+            text-align: center;
+            color: #f5cdc0;
+            font-size: 20px;
+         
+        }
+
+        .card:nth-child(2) h3 {
+            margin-top: 15px;
+        }
+
+        .card:nth-child(2) img {
+            margin-top: 20px;
+            margin-left: 10px;
+            border-radius: 10px;
+
+        }
+
+        .card:nth-child(2) button{
+            padding: 10px;
+            display: block;
+            margin-left: 125px;
+            margin-top: 20px;
+            width: 40%;
+            border-radius: 10px;
+            border: 0;
+        }
+
+        .card:nth-child(2) button a{
+            text-decoration: none;
+            color: #906f8d;
+            font-size: 15px;
+        }
+
+
+        @media screen and (min-width:320px) and (max-width:768px) {
+            #hamburguer{
+                color: var(--cor1);
+                font-size: 40px;
+                cursor: pointer;
+                position: absolute;
+                right: 5%;
+            }
+
+       
+           
+        
+
+            #itens{
+                display: none;
+            }
+
+            
+            #itens a{
+                display: block;
+                text-align: center;
+                background-color: var(--cor4);
+                padding: 5px;
+                border-radius: 10px;
+            
+            }
+
+            #itens a:nth-child(1){
+                margin-top: 60px;
+            }
+
+            
+            .design img {
+                margin-top: -20px;
+                display: block;
+                margin-left: -150px;
+                width: 100%;
+            }
+
+            .menu-container {
+                margin-top: 200px;
+            }
+            .especialidades {
+                margin-top: 380px;
+                margin-left: -50px;
+                
+            }
+            .portfolio {
+                margin-top: 800px;
+                width: 100%;
+            
+            }
+
+            
+            .card {
+                margin-right: 20px;
+                height:280px;
+
+                
+            }
+
+            .card i {
+                margin-top: 100%;
+                margin-left: 35px;
+            }
+            .card h3{
+                font-size: 16px;
+            }
+
+            .card img {
+                width: 70%;
+            }
+
+            .card button a{
+                margin-left: -30px;
+            }
+
+            .card:nth-child(2) button {
+                margin-left: 23px;
+                width: 70%;
+                padding: 10px;
+                
+            }
+
+            .card:nth-child(2) button > a {
+               margin-left: 0px;
+            }
+            
+          
+        }
+        @media screen and (min-width:768px) and (max-width:1200px){
+            #hamburguer{
+                display: none;
+            }
+        }
+        @media screen and (min-width:1200px) {
+            #hamburguer {
+                display: none;
+            }
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <main>
+    <section id="cabecalho">
+        <h1 id="logo"> &lt; Marcelle Nunes &gt;</h1>
+        <i class='bx bx-menu' id="hamburguer" onclick="MenuHamburguer()"></i>
+        <div id="itens">
+            <a href="#" class="active"> Menu </a>
+            <a href="#"> Especialidades</a>
+            <a href="#"> Portfólio</a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="menu-container">
+            <h1> Olá, meu nome é Marcelle Pereira Nunes</h1>
+            <h3>Desenvolvedora Front-End</h3>
+            <p>Busco uma oportunidade onde eu possa aplicar minha experiência em desenvolvimento web para contribuir efetivamente para projetos inovadores. Estou comprometida em aprender e me adaptar às novas tecnologia enquanto colaboro de forma proativa em um ambiente dinâmico e colaborativo</p>
+            <button><a href="docs/Currículo Marcelle Nunes.pdf" download>Baixar Currículo</a></button>
+        </div>
+    </section>
+
+    <section id="imagem">
+        <div class="design">
+            <img src="img/eu.jpeg" alt="Pessoa" width="55%">
+        </div>
+    </section>
+
+    <section id="segundotopico">
+        <div class="especialidades">
+            <h1> Especialidades</h1>
+            <abbr title="HTML 5"><i class='bx bxl-html5'></i></abbr>
+            <abbr title="CSS 3"><i class='bx bxl-css3'></i></abbr>
+            <abbr title="JAVASCRIPT"><i class='bx bxl-javascript'></i></abbr>
+            <abbr title="GIT"><i class='bx bxl-git' ></i></abbr>
+            <abbr title="GITHUB"><i class='bx bxl-github'></i></abbr>
+        </div>
+    </section>
+
+    <section id="terceirotopico">
+        <div class="portfolio">
+            <h1>Portfólio</h1>
+            <div class="card">
+                <h3>Calculadora</h3>
+                <img src="img/calc.png" alt="" width="30%">
+                <button> <a href="https://github.com/NunesMarcelle/Calculadora" target="_blank">Ver código</a></button>
+             </div>
+            <div class="card"><i class='bx bx-add-to-queue'></i></div>
+            <div class="card"><i class='bx bx-add-to-queue'></i></div>
+        </div>
+    </section>
+
+   </main>
+    <script>
+        function MenuHamburguer(){
+            if (itens.style.display == "none"){
+                itens.style.display = "block"
+            } else
+                itens.style.display = "none"
+        }
+    </script>
+</body>
+</html>
